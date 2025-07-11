@@ -16,59 +16,160 @@
 <body class="text-slate-900 min-h-screen relative text-sm sm:text-base">
     <header class="flex justify-between gap-8 p-8 max-w-[1000px] mx-auto w-full">
         <h1 class="text-2xl sm:text-3xl md:text-4xl">Tayyab Arshad</h1>
-        <button class="card-button-secondary rounded-full p-4 opacity-0 pointer-events-none">Contact</button>
+
+        <div class="flex gap-4 flex-wrap justify-center">
+            <a class="flex items-center gap-4 bg-blue-50 rounded-full p-1 pr-4 border border-solid border-transparent hover:border-blue-400 duration-200"
+                target='_blank' href='https://www.linkedin.com/in/tayyab-arshad-142829322/'>
+                <img class="max-w-10 rounded-full"
+                    src="https://media.licdn.com/dms/image/v2/D4D03AQEyQweZXyyrmg/profile-displayphoto-shrink_400_400/B4DZb5qHwbIAAk-/0/1747945294252?e=2147483647&v=beta&t=F_F59wJS6IfC-NXS_ezR3MEK2qZ0nBZesr0kb9NY-jk"
+                    alt='pfp' />
+                <p>LinkedIn</p>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a class="flex items-center gap-4 bg-blue-50 rounded-full p-1 pr-4 border border-solid border-transparent hover:border-blue-400 duration-200"
+                href="https://github.com/Tayyab-arshad118" target="_blank">
+                <img class="max-w-10 rounded-full" src="https://avatars.githubusercontent.com/u/202932682?v=4"
+                    alt="pfp">
+                <p>GitHub</p>
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <button class="card-button-secondary rounded-full p-4 hidden pointer-events-none">Contact</button>
+        </div>
+
         <div class="fixed top-8 right-8">
-            <button class="card-button-secondary rounded-full p-4">Contact</button>
+            <a href="#contact"> <button class="card-button-secondary rounded-full p-4">Contact</button>
+            </a>
         </div>
     </header>
 
     <main class="flex flex-col">
         <section id="hero" class="flex flex-col gap-8 px-8 py-8 sm:py-20 md:py-24 max-w-[1000px] mx-auto w-full">
             <div class="text-center fontflex flex-col items-center gap-3 ">
-                <h2 class="text-6xl sm:text-7xl md:text-8xl">Building with Purpose</h2>
+                <h2 class="text-6xl sm:text-7xl md:text-8xl mb-8">Building with Purpose</h2>
                 <h4 class="text-4xl sm:text-5xl md:text-6xl">Code. Learn. Repeat.</h4>
             </div>
-            <p class="text-center max-w-[600px] w-full px-1 mx-auto"><span class="font-semibold">Aspiring AI Engineer &
-                    Full-Stack Developer</span> with a passion for building real-world solutions using Machine Learning,
-                NLP, and modern web technologies.</p>
+            <p class="text-center max-w-[700px] w-full px-2 mx-auto text-lg sm:text-xl leading-relaxed">
+                I'm an <span class="font-bold text-blue-600">Aspiring AI Engineer</span> with a sharp focus on
+                <span class="text-pink-600 font-semibold">Machine Learning</span>,
+                <span class="text-blue-500 font-semibold">Natural Language Processing</span>, and
+                <span class="text-indigo-500 font-semibold">Full-Stack Web Development</span>. I love turning ideas into
+                <span class="text-green-500 font-semibold">real-world projects</span>, working in
+                <span class="text-yellow-500 font-semibold">collaborative teams</span>, and constantly leveling up my
+                technical skills.
+                <br><br>
+                My goal? To join a top-tier tech company and build meaningful, scalable AI solutions that actually make
+                a difference.
+            </p>
+
             <div class="flex items-center gap-4 flex-wrap justify-center">
                 <div class="tag rank px-2 py-0.5 sm:py-1.5 rounded-full sm:text-lg md:text-xl">AI & ML</div>
                 <div class="tag rank px-2 py-0.5 sm:py-1.5 rounded-full sm:text-lg md:text-xl">Full-Stack Web</div>
                 <div class="tag rank px-2 py-0.5 sm:py-1.5 rounded-full sm:text-lg md:text-xl">Open to Internships</div>
             </div>
             <div class="grid grid-cols-2 gap-4 w-fit mx-auto my-4">
-                <button
-                    class="card-button-secondary px-4 py-2 rounded-full text-xl sm:text-2xl md:text-3xl">Projects</button>
-                <button class="card-button-primary px-4 py-2 rounded-full text-xl sm:text-2xl md:text-3xl">Hire
-                    Me</button>
+                <a href="#projects"><button
+                        class="card-button-secondary px-4 py-2 rounded-full text-xl sm:text-2xl md:text-3xl">Projects</button></a>
+                <a href="resume.pdf" target="_blank">
+                    <button class="card-button-primary px-4 py-2 rounded-full text-xl sm:text-2xl md:text-3xl">
+                        My Resume
+                    </button>
+                </a>
+
             </div>
             <div class="flex flex-col items-center py-4 gap-4">
                 <p class="indie text-slate-600">Scroll to explore</p>
                 <div class="w-0.5 h-[100px] rounded-lg bg-gradient-to-b from-slate-400 to-transparent"></div>
             </div>
         </section>
+        <section id="skills" class="bg-slate-100 text-slate-900 px-8 py-16 sm:py-20">
+            <div class="max-w-[1000px] mx-auto flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <img src="pic.jpg" alt="" class="rounded-2xl w-72 sm:w-80 md:w-96 shadow-xl object-cover" />
+                </div>
+
+                <!-- Right: Skills List -->
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-5xl sm:text-6xl font-bold mb-6 text-center md:text-left">Skills</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 text-center text-lg">
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fab fa-js text-yellow-500 text-3xl"></i>
+                            JavaScript
+                        </div>
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fab fa-python text-blue-500 text-3xl"></i>
+                            Python
+                        </div>
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fab fa-java text-red-500 text-3xl"></i>
+                            Java
+                        </div>
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fas fa-code text-slate-800 text-3xl"></i>
+                            C++
+                        </div>
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fab fa-html5 text-orange-600 text-3xl"></i>
+                            HTML
+                        </div>
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fab fa-css3-alt text-blue-600 text-3xl"></i>
+                            CSS
+                        </div>
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fas fa-database text-purple-600 text-3xl"></i>
+                            SQL/MongoDB
+                        </div>
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fab fa-node-js text-green-600 text-3xl"></i>
+                            Node.js
+                        </div>
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fas fa-robot text-gray-800 text-3xl"></i>
+                            Machine Learning
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <section id="projects" class="bg-slate-950 text-white px-8 py-16 sm:py-20">
             <div class="flex flex-col w-full mx-auto max-w-[1000px] gap-8 ">
                 <p class="tag rank rounded-full px-4 py-2 text-center mx-auto">Crafted with Code</p>
                 <div class="flex flex-col gap-4">
-                    <h3 class="text-6xl sm:text-7xl md:text-8xl mx-auto text-center">Projects</h3>
+                    <h3 class="text-6xl sm:text-7xl md:text-8xl mx-auto text-center mb4">Projects</h3>
                     <p class="text-center mx-auto">A glimpse into what I’ve built and learned</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 my-10">
                     <div
-                        class="group border border-solid border-slate-800 hover:border-blue-400 p-4 rounded-lg flex flex-col gap-4">
-                        <h4 class="text-3xl sm:text-4xl md:text-5xl">ClassLink</h4>
+                        class="group border border-solid border-slate-800 hover:border-blue-400 duration-200 p-4 rounded-lg flex flex-col gap-4 ">
+                        <h4
+                            class="text-3xl sm:text-4xl md:text-5xl border-slate-800 bg-slate-950 border border-solid group-hover:border-blue-400 duration-200 py-4 px-2 -mt-10 w-fit rounded-lg">
+                            ClassLink</h4>
                         <p>&rarr; Real-time class & lab scheduling web app for university departments</p>
                         <p>&rarr; Built with Node.js, MongoDB, HTML, CSS, JS</p>
                         <p>&rarr; Deployed in the department and tested by real users</p>
                     </div>
                     <div
-                        class="group border border-solid border-slate-800 hover:border-blue-400 p-4 rounded-lg flex flex-col gap-4">
-                        <h4 class="text-3xl sm:text-4xl md:text-5xl">JARVIS Assistant</h4>
+                        class="group border border-solid border-slate-800 hover:border-blue-400 duration-200 p-4 rounded-lg flex flex-col gap-4 ">
+                        <h4
+                            class="text-3xl sm:text-4xl md:text-5xl border-slate-800 bg-slate-950 border border-solid group-hover:border-blue-400 duration-200 py-4 px-2 -mt-10 w-fit rounded-lg">
+                            JARVIS Assistant</h4>
                         <p>&rarr; Voice-enabled Python-based AI assistant</p>
                         <p>&rarr; Uses NLP, Speech Recognition & TTS for interaction</p>
                         <p>&rarr; Performs searches, opens apps, answers questions</p>
+                    </div>
+                </div>
+                <div class="mx-auto">
+                    <div
+                        class="group border border-solid border-slate-800 hover:border-blue-400 duration-200 p-4 rounded-lg flex flex-col gap-4 ">
+                        <h4
+                            class="text-3xl sm:text-4xl md:text-5xl border-slate-800 bg-slate-950 border border-solid group-hover:border-blue-400 duration-200 py-4 px-2 -mt-10 w-fit rounded-lg">
+                            Currency converter</h4>
+                        <p>&rarr; Real-time currency converter with live exchange rates</p>
+                        <p>&rarr; Built using HTML, CSS, and JavaScript</p>
+                        <p>&rarr; Fetches data via the ExchangeRate API and converts instantly</p>
                     </div>
                 </div>
                 <button
@@ -130,32 +231,70 @@
             </div>
         </section>
 
-        <section id="contact" class="flex flex-col gap-8 p-8">
-            <p class="tag rank rounded-full mx-auto px-4 py-2 text-center">Let’s Connect</p>
-            <p class="indie text-2xl sm:text-3xl md:text-4xl text-center mx-auto">Interested in working together?</p>
-            <h3 class="text-5xl sm:text-6xl text-center mx-auto">+92 303 00 11 616</h3>
+
+        <section id="talk"
+            class="px-8 py-20 sm:py-24 md:py-28 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+            <div class="max-w-[1000px] mx-auto flex flex-col gap-8 text-center">
+                <p class="tag rank rounded-full px-4 py-2 w-fit mx-auto text-sm sm:text-base">Talk With Me</p>
+                <h3 class="text-4xl sm:text-5xl md:text-6xl font-bold">Let’s Build Something Together</h3>
+                <p class="text-lg sm:text-xl max-w-[700px] mx-auto text-slate-300">
+                    Whether it's a project idea, internship opportunity, or just a tech convo — feel free to reach out!
+                </p>
+
+                <div class="flex flex-col gap-6 text-center text-xl sm:text-2xl mt-6">
+                    <div class="flex flex-col gap-1">
+                        <span class="text-slate-400 text-base sm:text-lg">Email</span>
+                        <span class="bg-slate-700 px-4 py-2 rounded-lg select-all">malikashad118118@gmail.com</span>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <span class="text-slate-400 text-base sm:text-lg">Phone</span>
+                        <span class="bg-slate-700 px-4 py-2 rounded-lg select-all">+92 303 00 11 616</span>
+                    </div>
+                </div>
+            </div>
         </section>
+
     </main>
 
-    <footer class="py-20 grid place-items-center gap-4">
-        <div class="flex gap-4 flex-wrap justify-center">
-            <a class="flex items-center gap-4 bg-blue-50 rounded-full p-1 pr-4 border border-solid border-transparent hover:border-blue-400 duration-200"
-                target='_blank' href='https://www.linkedin.com/in/tayyab-arshad-142829322/'>
-                <img class="max-w-10 rounded-full"
-                    src="https://media.licdn.com/dms/image/v2/D4D03AQEyQweZXyyrmg/profile-displayphoto-shrink_400_400/B4DZb5qHwbIAAk-/0/1747945294252?e=2147483647&v=beta&t=F_F59wJS6IfC-NXS_ezR3MEK2qZ0nBZesr0kb9NY-jk"
-                    alt='pfp' />
-                <p>LinkedIn</p>
-                <i class="fa-brands fa-linkedin-in"></i>
-            </a>
+    <footer>
+        <section id="contact" class="px-8 py-20 bg-white text-slate-900">
+            <div class="max-w-[1000px] mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-            <a class="flex items-center gap-4 bg-blue-50 rounded-full p-1 pr-4 border border-solid border-transparent hover:border-blue-400 duration-200"
-                href="https://github.com/Tayyab-arshad118" target="_blank">
-                <img class="max-w-10 rounded-full" src="https://avatars.githubusercontent.com/u/202932682?v=4"
-                    alt="pfp">
-                <p>GitHub</p>
-                <i class="fa-brands fa-github"></i>
-            </a>
-        </div>
+                <!-- Illustration -->
+                <div class="justify-center w-full md:w-1\2 hidden md:block ">
+                    <img src="https://stories.freepiklabs.com/storage/16560/Contact-Us-01.svg"
+                        alt="Contact illustration" class="max-w-full w-[90%] md:w-[100%]" />
+                </div>
+
+                <!-- Contact Form -->
+                <div class="flex flex-col gap-6 ">
+                    <p class="tag rank w-fit px-4 py-2 rounded-full">Let’s Chat</p>
+                    <h3 class="text-4xl sm:text-5xl font-bold">Contact Me</h3>
+                    <p class="text-slate-600">
+                        Have an idea or just want to connect? Drop a message — I’m always down for a good conversation
+                        and collab!
+                    </p>
+
+                    <form class="flex flex-col gap-4 w-full">
+                        <input type="text" name="name" placeholder="Your Name"
+                            class="p-4 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                            required />
+                        <input type="email" name="email" placeholder="Your Email"
+                            class="p-4 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                            required />
+                        <textarea name="message" placeholder="Your Message"
+                            class="p-4 border border-slate-300 rounded-lg h-36 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                            required></textarea>
+                        <button type="submit"
+                            class="card-button-primary px-6 py-3 rounded-full text-xl sm:text-2xl md:text-3xl">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
     </footer>
 
 </body>
